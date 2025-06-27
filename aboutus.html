@@ -44,19 +44,25 @@
 <body>
 
   <!-- Navbar (Optional) -->
-    <header class="navbar">
+<header class="navbar">
   <div class="container nav-flex">
     <div class="logo-block">
       <img src="Image/logo.png" alt="Logo" class="logo-img">
       <h1 class="logo-text">Divya Instruments</h1>
     </div>
-    <nav class="nav-links">
+
+    <!-- Hamburger Icon -->
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <!-- Navigation Links -->
+    <nav class="nav-links" id="navLinks">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="Product.html">Products</a></li>
         <li><a href="Contact.html">Contact</a></li>
       </ul>
     </nav>
+
     <div class="contact-info">
       <span class="phone-icon">📞</span>
       <a href="tel:07698037379" class="phone-btn">076980 37379</a>
@@ -82,6 +88,15 @@
       Visit our store in Ahmedabad or contact us directly at <strong>+91 76980 37379</strong> to discuss your lab requirements today.
     </p>
   </main>
+
+
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById("navLinks");
+    nav.classList.toggle("active");
+  }
+</script>
+
 
 </body>
 </html>

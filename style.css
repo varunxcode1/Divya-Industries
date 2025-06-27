@@ -362,3 +362,15 @@ footer p {
     margin-top: 10px;
   }
 }
+/* Fix for overflow issue on mobile */
+body {
+  overflow-x: hidden;
+}
+
+/* Ensure navbar content doesn't push beyond screen */
+.navbar, .nav-flex, .nav-links ul, .contact-info {
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+

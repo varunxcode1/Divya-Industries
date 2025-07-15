@@ -9,46 +9,58 @@
 <body>
     
   <!-- Navbar -->
-<header class="navbar">
-  <div class="container nav-flex">
-    <div class="logo-block">
-      <img src="Image/logo.png" alt="Logo" class="logo-img">
-      <h1 class="logo-text">Divya Industries</h1>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-flex">
+      <div class="logo-block">
+        <img src="Image/logo.png" alt="Logo" class="logo-img">
+        <h1 class="logo-text">Divya Industries</h1>
+      </div>
+      <div class="hamburger" id="hamburger">☰</div>
+      <nav class="nav-links" id="navLinks">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Product.html">Products</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="contact-info">
+        <span class="phone-icon">📞</span>
+        <a href="tel:09416430790" class="phone-btn">076980 37379</a>
+      </div>
     </div>
-
-    <!-- Hamburger Icon -->
-<div class="hamburger" id="hamburger">☰</div>
-
-    <!-- Navigation Links -->
-    <nav class="nav-links" id="navLinks">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="Product.html">Products</a></li>
-        <li><a href="Contact.html">Contact</a></li>
-      </ul>
-    </nav>
-
-    <div class="contact-info">
-      <span class="phone-icon">📞</span>
-      <a href="tel:09416430790" class="phone-btn">076980 37379</a>
-    </div>
-  </div>
-</header>
+  </header>
 
   <!-- Contact Section -->
-  <section class="about">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <p><strong>Address:</strong> 47, Bank Colony, Ambala Cantt, Haryana</p>
-      <p><strong>Email:</strong> divyaindustries.13417@gmail.com</p>
-      <p><strong>Phone:</strong> +91 94164 30790</p>
+  <section class="contact-hero">
+    <div class="container contact-flex">
+      <!-- Contact Info -->
+      <div class="contact-details">
+        <h2>Get in Touch</h2>
+        <p><strong>📍 Address:</strong> 47, Bank Colony, Ambala Cantt, Haryana</p>
+        <p><strong>📧 Email:</strong> <a href="mailto:divyaindustries.13417@gmail.com">divyaindustries.13417@gmail.com</a></p>
+        <p><strong>📞 Phone:</strong> <a href="tel:+919416430790">+91 94164 30790</a></p>
+        <iframe src="https://www.google.com/maps?q=47+Bank+Colony,+Ambala+Cantt,+Haryana&output=embed" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
 
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+      <!-- Form -->
+      <div class="contact-form-block">
+        <form class="contact-form">
+          <h3>Send a Message</h3>
+          <div class="input-group">
+            <input type="text" placeholder="Your Name" required>
+          </div>
+          <div class="input-group">
+            <input type="email" placeholder="Your Email" required>
+          </div>
+          <div class="input-group">
+            <textarea placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
     </div>
   </section>
 
@@ -59,16 +71,17 @@
     </div>
   </footer>
 
-  
-<script>
-  document.getElementById("hamburger").addEventListener("click", function () {
-    document.getElementById("navLinks").classList.toggle("active");
-  });
-</script>
+  <script>
+    document.getElementById("hamburger").addEventListener("click", function () {
+      document.getElementById("navLinks").classList.toggle("active");
+    });
+  </script>
 
-<a href="https://wa.me/919416430790" target="_blank" class="whatsapp-button" title="Chat with us on WhatsApp">
-  <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
-</a>
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/919416430790" target="_blank" class="whatsapp-button" title="Chat with us on WhatsApp">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
+  </a>
+</body>
 
 </body>
 </html>

@@ -46,6 +46,46 @@
     </div>
   </section>
 
+  <!-- Highlights Section -->
+<section class="highlights">
+  <div class="container highlight-grid">
+    <div class="highlight-box">
+      <img src="https://img.icons8.com/ios-filled/50/lab-items.png" alt="Quality">
+      <h3>High Precision</h3>
+      <p>We deliver lab equipment with the highest accuracy standards.</p>
+    </div>
+    <div class="highlight-box">
+      <img src="https://img.icons8.com/ios-filled/50/customer-support.png" alt="Support">
+      <h3>Expert Support</h3>
+      <p>Our team is always available to help you choose the right products.</p>
+    </div>
+    <div class="highlight-box">
+      <img src="https://img.icons8.com/ios-filled/50/fast-delivery.png" alt="Fast Delivery">
+      <h3>Fast Delivery</h3>
+      <p>Timely delivery to all corners of India with full safety protocols.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats-section">
+  <div class="container stats-grid">
+    <div class="stat-box">
+      <h2><span class="counter" data-target="500">0</span>+</h2>
+      <p>Products Available</p>
+    </div>
+    <div class="stat-box">
+      <h2><span class="counter" data-target="1000">0</span>+</h2>
+      <p>Happy Clients</p>
+    </div>
+    <div class="stat-box">
+      <h2><span class="counter" data-target="25">0</span>+</h2>
+      <p>Years of Experience</p>
+    </div>
+  </div>
+</section>
+
+
   <!-- About Us Section -->
   <section class="about-section">
     <div class="about-flex">
@@ -156,5 +196,25 @@
 <a href="https://wa.me/919416430790" target="_blank" class="whatsapp-button" title="Chat with us on WhatsApp">
   <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
 </a>
+
+<script>
+  const counters = document.querySelectorAll('.counter');
+  counters.forEach(counter => {
+    const updateCount = () => {
+      const target = +counter.getAttribute('data-target');
+      const count = +counter.innerText;
+      const increment = target / 200;
+
+      if (count < target) {
+        counter.innerText = Math.ceil(count + increment);
+        setTimeout(updateCount, 10);
+      } else {
+        counter.innerText = target;
+      }
+    };
+    updateCount();
+  });
+</script>
+
 </body>
 </html>
